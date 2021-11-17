@@ -27,16 +27,17 @@ int main ()
     cout << "m = ";
     cin >> m;
     
-    if(((m==0)&&(n>0))||((m==n)&&(n>=0))) {
+    if(n<0||m<0){
+        cout << "n and m must be positive." << endl;
+    }
+    else if(((m==0)&&(n>0))||((m==n)&&(n>=0))) {
         comb = 1;
         cout << "Cnm = " << comb << endl;
     }
     else if((m>n)&&(n>=0)){
         comb = 0;
         cout << "Cnm = " << comb << endl;
-    }
-    else if(n<0||m<0){
-        cout << "n and m must be positive." << endl;
+        
     }
     else{
         comb = C(n-1,m-1) + C(n-1,m);
