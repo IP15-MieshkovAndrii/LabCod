@@ -20,7 +20,7 @@ long long C(int n0, int m0){
 int main ()
 {
     int n, m;
-    long long comb;
+    long long Cnm;
     cout << "n = ";
     cin >> n;
     
@@ -32,17 +32,17 @@ int main ()
     }
     
     else if(((m==0)&&(n>0))||((m==n)&&(n>=0))) {
-        comb = 1;
-        cout << "Cnm = " << comb << endl;
+        Cnm = 1;
+        cout << "Cnm = " << Cnm << endl;
     }
     
     else if((m>n)&&(n>=0)){
-        comb = 0;
-        cout << "Cnm = " << comb << endl;
+        Cnm = 0;
+        cout << "Cnm = " << Cnm << endl;
     }
     
     else{
-        comb = C(n-1,m-1) + C(n-1,m);
-        cout << "Cnm = " << comb << endl;
+        Cnm = C(n-1,m-1) + C(n-1,m);
+        cout << "Cnm = " << Cnm << endl;
     }
 }
