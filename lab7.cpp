@@ -67,6 +67,6 @@ void average(char c[]){
             }
         }
     }
-    av=sum/num;
+    av=sum/float(num);
     cout << "Average: " << av << endl;
 }
