@@ -10,8 +10,7 @@ void out_th(char c[]);
 void average(char c[]);
 
 int main() {
-    const int n = 10;
-    char first[n], second[n], third[n];
+    char first[10], second[10], third[10];
     create(first, second);
     output(first, second);
     third_arr(first, second, third);
@@ -59,7 +58,7 @@ void out_th(char c[]){
 }
 
 void average(char c[]){
-    int sum = 0, av, num=0;
+    float sum = 0, av, num=0;
     for(int i = 0; i < 10; i++){
         if(c[i]<82){sum+=c[i];
             if(c[i]!=0){
