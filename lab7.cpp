@@ -58,7 +58,8 @@ void out_th(char c[]){
 }
 
 void average(char c[]){
-    float sum = 0, av, num=0;
+    float sum = 0, av;
+    int num=0;
     for(int i = 0; i < 10; i++){
         if(c[i]<82){sum+=c[i];
             if(c[i]!=0){
